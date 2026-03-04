@@ -1,0 +1,11 @@
+xoffset=660
+yoffset=275
+show=drun
+term=kitty
+width=600
+always_parse_args=true
+print_command=true
+layer=overlay
+insensitive=true
+prompt=
+no_actions=true

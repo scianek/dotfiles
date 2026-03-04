@@ -1,0 +1,51 @@
+window {
+    margin: 0px;
+    border-radius: 12px;
+    background-color: rgba(17,17,17,0.55);
+    font-family: your-font-here, sans-serif;
+    font-size: 13px;
+}
+
+#input {
+    margin: 16px 8px;
+    border: none;
+    color: #eceff4;
+    background-color: transparent;
+}
+
+#input image {
+    color: #eceff4;
+    margin-right: 4px;
+}
+
+#outer-box, #inner-box {
+    margin: 6px;
+    background-color: transparent;
+}
+
+#scroll {
+    margin: 0;
+    border: none;
+}
+
+#entry {
+    padding: 8px 12px;                  
+}
+
+#text {
+    margin-left: 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.65);   
+}
+
+#entry:selected {
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+#text:selected {
+    color: #ffffff;
+    font-weight: bold;
+}
