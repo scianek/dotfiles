@@ -1,0 +1,22 @@
+gui:
+  showBottomLine: false
+  showCommandLog: false
+  nerdFontsVersion: "3"
+  border: "rounded"
+  sidePanelWidth: 0.3
+  authorColors:
+    "*": "#69ddf5"
+  branchColors:
+    "master": "#fec2a4"
+  theme:
+    inactiveBorderColor:
+      - "#4b5ea2"
+    selectedLineBgColor:
+      - "#233459"
+git:
+  pagers:
+    - pager: delta --dark --paging=never
+      colorArg: always
+refresher:
+  refreshInterval: 1
+  fetchInterval: 60 
