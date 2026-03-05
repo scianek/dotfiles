@@ -1,0 +1,6 @@
+#!/bin/sh
+
+case "$1" in
+up) brillo -u 150000 -A 1 ;;
+down) brillo -u 150000 -U 1 ;;
+esac

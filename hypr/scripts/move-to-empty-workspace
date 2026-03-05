@@ -1,0 +1,10 @@
+#!/bin/bash
+
+existing_ids=($(hyprctl workspaces | grep -oP 'workspace ID \K\d+'))
+
+unused_id=1
+while [[ " ${existing_ids[@]} " =~ " $unused_id " ]]; do
+	((unused_id++))
+done
+
+hyprctl dispatch movetoworkspace "$unused_id"
