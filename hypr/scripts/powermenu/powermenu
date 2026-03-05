@@ -1,0 +1,16 @@
+#!/bin/bash
+
+config="$HOME/.config/hypr/scripts/powermenu/config"
+theme="$HOME/.config/hypr/scripts/powermenu/style.css"
+reboot=" Reboot"
+shutdown=" Shutdown"
+lock=" Lock"
+
+selected=$(echo -e "$shutdown\n$reboot\n$lock" | wofi -d -s $theme -c $config --normal-window)
+
+case ${selected} in
+$shutdown) shutdown now ;;
+$reboot) reboot ;;
+$lock) hyprlock ;;
+esac
+

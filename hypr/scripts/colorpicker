@@ -1,0 +1,6 @@
+#!/bin/bash
+
+color=$(hyprpicker)
+wl-copy $color
+eval "convert -size 100x100 xc:$color /tmp/color.png"
+notify-send "$color" "Copied to clipboard" -i /tmp/color.png -u normal
