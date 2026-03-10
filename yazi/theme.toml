@@ -1,0 +1,23 @@
+[mgr]
+border_style = { fg = "#4b5ea2" }
+count_selected = { fg = "#fec2a4", bg = "#422617" }
+count_cut = { fg = "#fc7ead", bg = "#3d1826" }
+count_copied = { fg = "#6ef0c7", bg = "#0d362a" }
+
+[mode]
+normal_main = { fg = "#010515", bg = "#92b2fe", bold = true }
+normal_alt = { fg = "#92b2fe", bg = "#1b2746", bold = true }
+select_main = { fg = "#010515", bg = "#fc7ead", bold = true }
+select_alt = { fg = "#fc7ead", bg = "#3d1826", bold = true }
+unset_main = { fg = "#010515", bg = "#cb94ff", bold = true }
+unset_alt = { fg = "#cb94ff", bg = "#312040", bold = true }
+
+[tabs]
+active = { fg = "#010515", bg = "#92b2fe", bold = true }
+inactive = { fg = "#92b2fe", bg = "#1b2746" }
+
+[which]
+mask = { bg = "#010515" }
+separator_style = { fg = "#4b5ea2" }
+desc = { fg = "#bbc6e9" }
+cand = { fg = "#cb94ff" }
