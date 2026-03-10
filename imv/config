@@ -1,0 +1,5 @@
+[options]
+overlay_font=Monospace:12
+
+[binds]
+p = exec $HOME/.config/imv/imv-yazi "$imv_current_file"
