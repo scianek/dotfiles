@@ -1,0 +1,37 @@
+[mgr]
+sort_by = "natural"
+
+[preview]
+image_quality = 50
+image_filter = "nearest"
+
+[tasks]
+suppress_preload = true
+micro_workers = 2
+macro_workers = 2
+
+[opener]
+video = [
+    { run = 'mpv --fs --keep-open=yes --sub-auto=all "$@"', orphan = true, for = "unix" },
+]
+
+imv = [
+    { run = 'imv -f -n "$1" "$(dirname "$1")"', orphan = true, for = "unix" },
+]
+
+
+[open]
+prepend_rules = [
+    { mime = "video/*", use = "video" },
+    { mime = "image/*", use = "imv" },
+]
+
+[[plugin.prepend_previewers]]
+mime = "{audio,video,image}/*"
+run = "mediainfo"
+
+[[plugin.prepend_fetchers]]
+id = "mime"
+name = "*"
+run = "mime-ext"
+prio = "high"
